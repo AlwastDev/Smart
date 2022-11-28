@@ -1,0 +1,19 @@
+.header-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  &__buttons {
+    @media (max-width: 1200px) {
+      margin-right: 20px;
+    }
+  }
+
+  &__logo {
+    width: 147px;
+
+    @include large {
+      width: 250px;
+    }
+  }
+}

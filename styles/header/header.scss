@@ -1,0 +1,17 @@
+.header {
+  height: 100vh;
+  background: url('../images/mainImage.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  color: white;
+
+  &__get-started-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

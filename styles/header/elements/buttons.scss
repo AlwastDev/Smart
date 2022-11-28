@@ -1,0 +1,45 @@
+.buttons {
+  display: flex;
+  align-items: center;
+
+  &__log {
+    border-color: transparent;
+    margin-right: 15px;
+    padding: 5px 5px;
+    border-radius: 5px;
+    transition: 0.3s;
+    font-size: 16px;
+    text-shadow: 1px 1px 2px black;
+    
+    &:hover {
+      background-color: black;
+    }
+
+    @include large {
+      margin-right: 35px;
+      font-size: 20px;
+    }
+  }
+
+  &__toggler {
+    &-close {
+      background-color: transparent;
+      border-color: transparent;
+      padding: 0;
+      color: #fff;
+      font-size: 18px;
+
+      @include large {
+        font-size: 28px;
+      }
+    }
+
+    &-open {
+      width: 15px;
+
+      @include large {
+        width: 30px;
+      }
+    }
+  }
+}

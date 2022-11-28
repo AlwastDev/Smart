@@ -1,0 +1,144 @@
+.app {
+  padding-top: 100px;
+  background-color: $greyBackground;
+  margin-bottom: 10px;
+
+  @media (max-width: 1040px) {
+    padding-top: 40px;
+  }
+
+  &__download-item {
+    @include large {
+      width: 140px;
+      height: 50px;
+    }
+  }
+
+  &__download-link {
+    &:first-of-type {
+      margin-right: 20px;
+    }
+  }
+
+  &__about-us {
+    display: flex;
+    justify-content: space-between;
+
+    @include Bigger {
+      justify-content: space-evenly;
+    }
+    
+    @media (max-width: 1040px) {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+  }
+
+  &__text {
+    font-size: 13px;
+    color: $greyColor;
+
+    @include large {
+      font-size: 20px;
+    }
+  }
+
+  &__download {
+    margin-top: 30px;
+  }
+
+  &__workers {
+    width: 100%;
+    background-color: rgba(74, 57, 73);
+    
+
+    &-container {
+      background: url('../images/backImg.webp');
+      background-position: top center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      padding: 70px 0;
+      color: rgb(187, 187, 187);
+    }
+  }
+
+  &__swiper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    @include large {
+      font-size: 28px;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      width: 22%;
+      height: 2px;
+      background-color: $afterColor;
+    }
+  }
+
+  &__worker-phrase {
+    text-align: center;
+
+    @include large {
+      font-size: 24px;
+    }
+  }
+
+  &__slider {
+    margin-top: 30px;
+  }
+
+  &__worker-name {
+    font-family: 'PT Serif';
+    @include large {
+      font-size: 20px;
+    }
+  }
+
+  &__worker {
+    width: 114px;
+
+    @include large {
+      width: 140px;  
+    }
+  }
+
+  &__phone-App {
+    @media (max-width: 640px) {
+      width: 80%;
+    }
+  }
+
+  &__description {
+    padding: 0 10px 30px;
+    margin-top: 80px;
+
+    @media (max-width: 1040px) {
+      margin-top: 0;
+    }
+  }
+}
+
+.swiper {
+  height: 300px;
+
+  @include large {
+    height: 350px;
+  }
+
+  & &-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    line-height: 20px;
+    font-size: 14px;
+    background-color: #fff;
+  }
+}
+
+

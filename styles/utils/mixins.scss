@@ -1,0 +1,30 @@
+@mixin Desktop {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin Bigger {
+  @media (min-width: 1440px) {
+    @content;
+  }
+}
+
+@mixin Biggest {
+  @media (min-width: 1640px) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media (min-width: 1960px) {
+    @content;
+  }
+}
+
+@mixin largest {
+  @media (min-width: 2500px) {
+    @content;
+  }
+}
+

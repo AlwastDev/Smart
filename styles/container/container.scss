@@ -1,0 +1,31 @@
+.container {
+  @include Desktop {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  @include Bigger {
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  @include Biggest {
+    max-width: 1640px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  @include large {
+    max-width: 1840px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  @include largest {
+    max-width: 2300px;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
