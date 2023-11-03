@@ -1,320 +1,326 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
     <link
-      rel="preconnect"
-      href="https://fonts.gstatic.com"
-      crossorigin
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin
     >
     <link
-      href="https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&family=Poppins:ital,wght@0,400;0,600;1,200&display=swap"
-      rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&family=Poppins:ital,wght@0,400;0,600;1,200&display=swap"
+            rel="stylesheet"
     >
     <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+            rel="stylesheet"
+            href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
     />
     <title>Document</title>
-  </head>
-  <body class="page">
-    <div class="header">
-      <div class="container">
+</head>
+<body class="page">
+<div class="header">
+    <div class="container">
         <div class="header__header-block header-block">
-          <a href="#">
-            <img src="./images/logo.webp" alt="Logo" class="header-block__logo">
-          </a>
+            <a href="#">
+                <img src="./images/logo.webp" alt="Logo" class="header-block__logo">
+            </a>
 
-          <div class="header-block__buttons buttons">
-            <button class="buttons__log button" id="log-in-button">log in</button>
-            <button type="button" class="buttons__log button" id="sign-up-button">sign up</button>
+            <div class="header-block__buttons buttons">
+                <button class="buttons__log button" id="log-in-button">log in</button>
+                <button type="button" class="buttons__log button" id="sign-up-button">sign up</button>
 
-            <img
-              tabindex="0"
-              class="buttons__toggler-open"
-              alt="Navigation open"
-              src="./images/LayerCopy.webp"
-            >
-          </div>
+                <img
+                        tabindex="0"
+                        class="buttons__toggler-open"
+                        alt="Navigation open"
+                        src="./images/LayerCopy.webp"
+                >
+            </div>
         </div>
 
         <div class="header__get-started-container get-started-container">
-          <h1 class="get-started-container__title">
-            <span class="get-started-container__title-part">Find your Favorite</span>
-            recipes
-          </h1>
+            <h1 class="get-started-container__title">
+                <span class="get-started-container__title-part">Find your Favorite</span>
+                recipes
+            </h1>
 
-          <button class="get-started-container__get-started button">Get started</button>
+            <button class="get-started-container__get-started button">Get started</button>
 
-          <p class="get-started-container__description">or send us your own recipes and get rewarded!</p>
+            <p class="get-started-container__description">or send us your own recipes and get rewarded!</p>
         </div>
-      </div>
-
-    
-      <nav class="page__nav nav">
-        <div class="container">
-          <div class="header__header-block header-block">
-            <img
-              src="./images/logo.webp"
-              alt="Logo"
-              class="header-block__logo"
-              id="close-nav"
-            >
-
-            <div class="header-block__buttons buttons">
-              <button class="buttons__toggler-close">X</button>
-            </div> 
-          </div>
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="#about-us" class="nav__link">About us</a>
-            </li>
-            <li class="nav__item">
-              <a href="#App" class ="nav__link">Our APP</a>
-            </li>
-            <li class="nav__item">
-              <a href="#cuisines" class="nav__link">Browse by cuisines</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-
-      <div class="page__form-container form-container" id="sign-up">
-        <div class="form-container__form form">
-          <button class="form__leave" id="leave-sign-up">&lt;</button>
-          <img src="./images/logo.webp" alt="logo" class="form__logo">
-          <h2 class="form__title">sign-up</h2>
-          <form class="form__form-field">
-            <input
-              type="text"
-              name="firstUsername"
-              placeholder="Username"
-              class="form__input"
-            />
-
-            <input
-              type="email"
-              name="firstEmail"
-              placeholder="Email"
-              class="form__input"
-            />
-
-            <input
-              type="password"
-              name="firstPassword"
-              placeholder="password"
-              autocomplete="off"
-              class="form__input"
-            />
-
-            <button type="submit" class="form__button">Sign up</button>
-          </form>
-          <p class="form__prompt">
-            if you already have an account
-            <br>
-            <a class="form__prompt-link" id="target-to-log-in">Log in</a>
-          </p>
-        </div>
-      </div>
-
-      <div class="page__form-container form-container" id="log-in">
-        <div class="form-container__form form">
-          <button class="form__leave" id="leave-log-in">&lt;</button>
-          <img src="./images/logo.webp" alt="logo" class="form__logo">
-          <h2 class="form__title">log in</h2>
-          <form class="form__form-field">
-
-            <input
-            type="email"
-            name="email"
-            placeholder="Username or email"
-            class="form__input"
-            />
-
-            <input
-              type="password"
-              name="password"
-              placeholder="password"
-              autocomplete="off"
-            class="form__input"
-            />
-
-            <button type="submit" class="form__button">log in</button>
-          </form>
-          <p class="form__prompt">
-            don't have an account?
-            <a class="form__prompt-link" id="target-to-sign-up">sign up</a>
-          </p>
-        </div>
-      </div>
     </div>
 
-    <main class="page__main">
 
-      <section class="about-us" id="about-us">
+    <nav class="page__nav nav">
         <div class="container">
-          <div class="about-us__content content">
-            <div class="content__item">
-              <img src="./images/bureger..webp" alt="burger" class="content__image">
-              <h3 class="content__title">get inspired</h3>
-              <p class="content__description">
-                Lorem ipsum dolor sit amet, consectetur adipisc
-                Pellentesque vel enim a elit viverra elementuma.
-                Aliquam erat volutpat. 
-              </p>
-            </div>
-            <div class="content__item">
-              <img src="./images/money.webp" alt="money" class="content__image">
-              <h3 class="content__title">get rewarded</h3>
-              <p class="content__description">
-                Lorem ipsum dolor sit amet, consectetur adipisc
-                Pellentesque vel enim a elit viverra elementuma.
-                Aliquam erat volutpat. 
-              </p>
-            </div>
-            <div class="content__item">
-              <img src="./images/cooker.webp" alt="cooker" class="content__image">
-              <h3 class="content__title">get social</h3>
-              <p class="content__description">
-                Lorem ipsum dolor sit amet, consectetur adipisc
-                Pellentesque vel enim a elit viverra elementuma.
-                Aliquam erat volutpat. 
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+            <div class="header__header-block header-block">
+                <img
+                        src="./images/logo.webp"
+                        alt="Logo"
+                        class="header-block__logo"
+                        id="close-nav"
+                >
 
-      <section class="app" id="App">
+                <div class="header-block__buttons buttons">
+                    <button class="buttons__toggler-close">X</button>
+                </div>
+            </div>
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="#about-us" class="nav__link">About us</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#App" class="nav__link">Our APP</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#cuisines" class="nav__link">Browse by cuisines</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="page__form-container form-container" id="sign-up">
+        <div class="form-container__form form">
+            <button class="form__leave" id="leave-sign-up">&lt;</button>
+            <img src="./images/logo.webp" alt="logo" class="form__logo">
+            <h2 class="form__title">sign-up</h2>
+            <form class="form__form-field">
+                <input
+                        aria-label="userName"
+                        type="text"
+                        name="firstUsername"
+                        placeholder="Username"
+                        class="form__input"
+                />
+
+
+                <input
+                        aria-label="email"
+                        type="email"
+                        name="firstEmail"
+                        placeholder="Email"
+                        class="form__input"
+                />
+
+                <input
+                        aria-label="password"
+                        type="password"
+                        name="firstPassword"
+                        placeholder="password"
+                        autocomplete="off"
+                        class="form__input"
+                />
+
+                <button type="submit" class="form__button">Sign up</button>
+            </form>
+            <p class="form__prompt">
+                if you already have an account
+                <br>
+                <a class="form__prompt-link" id="target-to-log-in">Log in</a>
+            </p>
+        </div>
+    </div>
+
+    <div class="page__form-container form-container" id="log-in">
+        <div class="form-container__form form">
+            <button class="form__leave" id="leave-log-in">&lt;</button>
+            <img src="./images/logo.webp" alt="logo" class="form__logo">
+            <h2 class="form__title">log in</h2>
+            <form class="form__form-field">
+
+                <input
+                        aria-label="username or email"
+                        type="email"
+                        name="email"
+                        placeholder="Username or email"
+                        class="form__input"
+                />
+
+                <input
+                        aria-label="password"
+                        type="password"
+                        name="password"
+                        placeholder="password"
+                        autocomplete="off"
+                        class="form__input"
+                />
+
+                <button type="submit" class="form__button">log in</button>
+            </form>
+            <p class="form__prompt">
+                don't have an account?
+                <a class="form__prompt-link" id="target-to-sign-up">sign up</a>
+            </p>
+        </div>
+    </div>
+</div>
+
+<main class="page__main">
+
+    <section class="about-us" id="about-us">
         <div class="container">
-          <div class="app__about-us">
-            <img src="./images/Phone.webp" alt="Phone App" class="app__phone-App">
-            <div class="app__description">
-              <h2 class="app__title">
-                introducing the fudi app
-              </h2>
-
-              <p class="app__text">
-                Morbi eget posuere dolor. Pellentesque cursus aliquet aliquet. Aeneanet <br>
-                felis sit amet diam mollis ullamcorper. Nullam consequat sem a ante vest<br>
-                ibulum tristique. Suspendisse tristique lacus ac mattis porta. 
-              </p>
-
-              <p class="app__text">
-                Vivamus ligula quam, vehicula non lacinia sed, faucibus sit amet libero. In <br>
-                libero dui, eleifend eu nisi id, egestas fringilla odio. In varius quam a mas<br>
-                sa hendrerit ullamcorper a eu justo. Suspendisse porta mattis convallis. <br>
-                Aenean tempus ligula ac odio rhoncus, quis aliquam dolor accumsan. 
-              </p>
-
-              <p class="app__text">
-                Suspendisse aliquet felis consectetur libero congue, sed pulvinar diam<br> 
-                malesuada. Duis vehicula a nibh id hendrerit. Donec sit amet ultrices <br>
-                ante, a mattis massa. 
-              </p>
-
-              <div class="app__dowloand">
-                <a href="https://www.apple.com" target="_blank" class="app__download-link">
-                  <img src="./images/AppStore.webp" class="app__download-item" alt="App store">
-                </a>
-                <a href="https://play.google.com" target="_blank" class="app__download-link">
-                  <img src="./images/GooglePlay.webp" class="app__download-item" alt="Google play">
-                </a>
-              </div>
+            <div class="about-us__content content">
+                <div class="content__item">
+                    <img src="./images/bureger..webp" alt="burger" class="content__image">
+                    <h3 class="content__title">get inspired</h3>
+                    <p class="content__description">
+                        Lorem ipsum dolor sit amet, consectetur adipisc
+                        Pellentesque vel enim a elit viverra elementuma.
+                        Aliquam erat volutpat.
+                    </p>
+                </div>
+                <div class="content__item">
+                    <img src="./images/money.webp" alt="money" class="content__image">
+                    <h3 class="content__title">get rewarded</h3>
+                    <p class="content__description">
+                        Lorem ipsum dolor sit amet, consectetur adipisc
+                        Pellentesque vel enim a elit viverra elementuma.
+                        Aliquam erat volutpat.
+                    </p>
+                </div>
+                <div class="content__item">
+                    <img src="./images/cooker.webp" alt="cooker" class="content__image">
+                    <h3 class="content__title">get social</h3>
+                    <p class="content__description">
+                        Lorem ipsum dolor sit amet, consectetur adipisc
+                        Pellentesque vel enim a elit viverra elementuma.
+                        Aliquam erat volutpat.
+                    </p>
+                </div>
             </div>
-          </div>
         </div>
-    
+    </section>
+
+    <section class="app" id="App">
+        <div class="container">
+            <div class="app__about-us">
+                <img src="./images/Phone.webp" alt="Phone App" class="app__phone-App">
+                <div class="app__description">
+                    <h2 class="app__title">
+                        introducing the fudi app
+                    </h2>
+
+                    <p class="app__text">
+                        Morbi eget posuere dolor. Pellentesque cursus aliquet aliquet. Aeneanet <br>
+                        felis sit amet diam mollis ullamcorper. Nullam consequat sem a ante vest<br>
+                        ibulum tristique. Suspendisse tristique lacus ac mattis porta.
+                    </p>
+
+                    <p class="app__text">
+                        Vivamus ligula quam, vehicula non lacinia sed, faucibus sit amet libero. In <br>
+                        libero dui, eleifend eu nisi id, egestas fringilla odio. In varius quam a mas<br>
+                        sa hendrerit ullamcorper a eu justo. Suspendisse porta mattis convallis. <br>
+                        Aenean tempus ligula ac odio rhoncus, quis aliquam dolor accumsan.
+                    </p>
+
+                    <p class="app__text">
+                        Suspendisse aliquet felis consectetur libero congue, sed pulvinar diam<br>
+                        malesuada. Duis vehicula a nibh id hendrerit. Donec sit amet ultrices <br>
+                        ante, a mattis massa.
+                    </p>
+
+                    <div class="app__dowloand">
+                        <a href="https://www.apple.com" target="_blank" class="app__download-link">
+                            <img src="./images/AppStore.webp" class="app__download-item" alt="App store">
+                        </a>
+                        <a href="https://play.google.com" target="_blank" class="app__download-link">
+                            <img src="./images/GooglePlay.webp" class="app__download-item" alt="Google play">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="app__workers">
-          <div class="app__workers-container">
-            <div class="swiper">
-              <div class="swiper-wrapper">
-                <div class="app__swiper swiper-slide">
-                  <img src="./images/devloper.webp" alt="our worker" class="app__worker">
-                  <p class="app__worker-phrase">
-                    <q>I am so happy because i found this recipe and just made my life easer.
-                    <br>
-                    Thanks so much for sharing!</q>
-                  </p>
-                  <span class="app__worker-name">Michael Dawson. San Francisco. CA</span>
+            <div class="app__workers-container">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="app__swiper swiper-slide">
+                            <img src="./images/devloper.webp" alt="our worker" class="app__worker">
+                            <p class="app__worker-phrase">
+                                <q>I am so happy because I found this recipe and just made my life easier.
+                                    <br>
+                                    Thanks so much for sharing!</q>
+                            </p>
+                            <span class="app__worker-name">Michael Dawson. San Francisco. CA</span>
+                        </div>
+                        <div class="app__swiper  swiper-slide">
+                            <img src="./images/devloper.webp" alt="our worker" class="app__worker">
+                            <p class="app__worker-phrase">
+                                <q>I am so happy because I found this recipe and just made my life easier.
+                                    <br>
+                                    Thanks so much for sharing!</q>
+                            </p>
+                            <span class="app__worker-name">Michael Dawson. San Francisco. CA</span>
+                        </div>
+                        <div class="app__swiper  swiper-slide">
+                            <img src="./images/devloper.webp" alt="our worker" class="app__worker">
+                            <p class="app__worker-phrase">
+                                <q>I am so happy because I found this recipe and just made my life easier.
+                                    <br>
+                                    Thanks so much for sharing!</q>
+                            </p>
+                            <span class="app__worker-name">Michael Dawson. San Francisco. CA</span>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
                 </div>
-                <div class="app__swiper  swiper-slide">
-                  <img src="./images/devloper.webp" alt="our worker" class="app__worker">
-                  <p class="app__worker-phrase">
-                    <q>I am so happy because i found this recipe and just made my life easer.
-                    <br>
-                    Thanks so much for sharing!</q>
-                  </p>
-                  <span class="app__worker-name">Michael Dawson. San Francisco. CA</span>
-                </div>
-                <div class="app__swiper  swiper-slide">
-                  <img src="./images/devloper.webp" alt="our worker" class="app__worker">
-                  <p class="app__worker-phrase">
-                    <q>I am so happy because i found this recipe and just made my life easer.
-                    <br>
-                    Thanks so much for sharing!</q>
-                  </p>
-                  <span class="app__worker-name">Michael Dawson. San Francisco. CA</span>
-                </div>
-              </div>
-              <div class="swiper-pagination"></div>
             </div>
-          </div>
         </div>
-      </section>
+    </section>
 
-      <section class="page__cuisines cuisines" id="cuisines">
+    <section class="page__cuisines cuisines" id="cuisines">
         <h2 class="cuisines__title">browse by cuisines</h2>
         <div class="cuisines__container"></div>
 
         <div class="container">
-          <div class="cuisines__active">
-            <div class="cuisines__type-of-amount">
-              <span class="cuisines__number" id="recipes-available"></span>
-              <span class="cuisines__description">Recipes Available</span>
+            <div class="cuisines__active">
+                <div class="cuisines__type-of-amount">
+                    <span class="cuisines__number" id="recipes-available"></span>
+                    <span class="cuisines__description">Recipes Available</span>
+                </div>
+                <div class="cuisines__type-of-amount">
+                    <span class="cuisines__number" id="active-users"></span>
+                    <span class="cuisines__description">Active Users</span>
+                </div>
+                <div class="cuisines__type-of-amount">
+                    <span class="cuisines__number" id="positive-reviews"></span>
+                    <span class="cuisines__description">Positive Reviews</span>
+                </div>
+                <div class="cuisines__type-of-amount">
+                    <span class="cuisines__number" id="photos-and-videos"></span>
+                    <span class="cuisines__description">Photos & Videos</span>
+                </div>
+                <div class="cuisines__type-of-amount">
+                    <span class="cuisines__number" id="spices-and-herbs"></span>
+                    <span class="cuisines__description">Spices and Herbs</span>
+                </div>
             </div>
-            <div class="cuisines__type-of-amount">
-              <span class="cuisines__number" id="active-users"></span>
-              <span class="cuisines__description">Active Users</span>
-            </div>
-            <div class="cuisines__type-of-amount">
-              <span class="cuisines__number" id="positive-reviews"></span>
-              <span class="cuisines__description">Positive Reviews</span>
-            </div>
-            <div class="cuisines__type-of-amount">
-              <span class="cuisines__number" id="photos-and-videos"></span>
-              <span class="cuisines__description">Photos & Videos</span>
-            </div>
-            <div class="cuisines__type-of-amount">
-              <span class="cuisines__number" id="spices-and-herbs"></span>
-              <span class="cuisines__description">Spices and Herbs</span>
-            </div>
-          </div>
         </div>
 
         <button class="cuisines__sort" id="sort">sort by amount of recipes</button>
-      </section>
-    </main>
+    </section>
+</main>
 
-    <footer class="footer">
-      <div class="container">
+<footer class="footer">
+    <div class="container">
         <div class="footer__content">
-          <div class="footer__fudi">
-            ©2014 Fudi. All Rights Reserved.
-          </div>
-          <div class="footer__designers">
-            disigned by:
-            <span class="footer__designers-site">www.bakades.com</span>
-          </div>
+            <div class="footer__fudi">
+                ©2014 Fudi. All Rights Reserved.
+            </div>
+            <div class="footer__designers">
+                disigned by:
+                <span class="footer__designers-site">www.bakades.com</span>
+            </div>
         </div>
-      </div>
-    </footer>
+    </div>
+</footer>
 
-    <script src="./main.js"></script>
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-    <script src="./swiper.js"></script>
-  </body>
+<script src="./main.js"></script>
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src="./swiper.js"></script>
+</body>
 </html>

@@ -10,14 +10,9 @@
     transition: 0.3s;
     font-size: 16px;
     text-shadow: 1px 1px 2px black;
-    
+
     &:hover {
       background-color: black;
-    }
-
-    @include large {
-      margin-right: 35px;
-      font-size: 20px;
     }
   }
 
@@ -28,18 +23,10 @@
       padding: 0;
       color: #fff;
       font-size: 18px;
-
-      @include large {
-        font-size: 28px;
-      }
     }
 
     &-open {
       width: 15px;
-
-      @include large {
-        width: 30px;
-      }
     }
   }
 }

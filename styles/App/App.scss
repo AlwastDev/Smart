@@ -1,17 +1,9 @@
 .app {
   padding-top: 100px;
-  background-color: $greyBackground;
   margin-bottom: 10px;
 
   @media (max-width: 1040px) {
     padding-top: 40px;
-  }
-
-  &__download-item {
-    @include large {
-      width: 140px;
-      height: 50px;
-    }
   }
 
   &__download-link {
@@ -24,10 +16,6 @@
     display: flex;
     justify-content: space-between;
 
-    @include Bigger {
-      justify-content: space-evenly;
-    }
-    
     @media (max-width: 1040px) {
       flex-direction: column-reverse;
       align-items: center;
@@ -36,11 +24,6 @@
 
   &__text {
     font-size: 13px;
-    color: $greyColor;
-
-    @include large {
-      font-size: 20px;
-    }
   }
 
   &__download {
@@ -50,13 +33,10 @@
   &__workers {
     width: 100%;
     background-color: rgba(74, 57, 73);
-    
 
     &-container {
-      background: url('../images/backImg.webp');
-      background-position: top center;
       background-size: contain;
-      background-repeat: no-repeat;
+      background: url('images/backImg.webp') no-repeat top center;
       padding: 70px 0;
       color: rgb(187, 187, 187);
     }
@@ -69,25 +49,16 @@
   }
 
   &__title {
-    @include large {
-      font-size: 28px;
-    }
-
     &::after {
       content: "";
       display: block;
       width: 22%;
       height: 2px;
-      background-color: $afterColor;
     }
   }
 
   &__worker-phrase {
     text-align: center;
-
-    @include large {
-      font-size: 24px;
-    }
   }
 
   &__slider {
@@ -95,18 +66,11 @@
   }
 
   &__worker-name {
-    font-family: 'PT Serif';
-    @include large {
-      font-size: 20px;
-    }
+    font-family: 'PT Serif', sans-serif;
   }
 
   &__worker {
     width: 114px;
-
-    @include large {
-      width: 140px;  
-    }
   }
 
   &__phone-App {
@@ -127,10 +91,6 @@
 
 .swiper {
   height: 300px;
-
-  @include large {
-    height: 350px;
-  }
 
   & &-pagination-bullet {
     width: 10px;

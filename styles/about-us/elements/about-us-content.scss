@@ -19,10 +19,6 @@
       width: 300px;
     }
 
-    @include large {
-      width: 420px;
-    }
-
     @media (max-width: 850px) {
       margin-bottom: 40px;
 
@@ -33,16 +29,11 @@
   }
 
   &__title {
-    @include large {
-      font-size: 28px;
-    }
-
     &::after {
       content: "";
       display: block;
       width: 88px;
       height: 2px;
-      background-color: $afterColor;
       margin: 0 auto;
     }
   }
@@ -50,26 +41,16 @@
   &__description {
     text-align: center;
     font-size: 13px;
-    color: $greyColor;
     padding: 0 5px;
     max-width: 360px;
 
     @media (max-width: 1040px) {
       max-width: 300px;
     }
-
-    @include large {
-      font-size: 20px;
-      min-width: 420px;
-    }
   }
 
   &__image {
     height: 107px;
     object-fit: contain;
-
-    @include large {
-      height: 150px;
-    }
   }
 }

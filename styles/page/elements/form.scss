@@ -16,10 +16,6 @@
   background: linear-gradient(rgb(69, 14, 121), rgb(150, 120, 87));
   padding: 30px 40px;
 
-  @include large {
-    padding: 40px 50px;
-  }
-
   &__form-field {
     display: flex;
     flex-direction: column;
@@ -37,18 +33,10 @@
 
   &__logo {
     width: 100px;
-
-    @include large {
-      width: 150px;
-    }
   }
 
   &__title {
     text-transform: uppercase;
-
-    @include large {
-      font-size: 28px;
-    }
   }
 
   &__input {
@@ -65,10 +53,6 @@
     &:last-of-type {
       margin-bottom: 25px;
     }
-
-    @include large {
-      font-size: 24px;
-    }
   }
 
   &__button {
@@ -82,22 +66,14 @@
     &:hover {
       background-color: rgb(69, 14, 121);
     }
-
-    @include large {
-      font-size: 24px;
-    }
   }
 
   &__prompt {
     text-align: center;
     text-transform: uppercase;
-    
+
     &-link {
       text-decoration: underline;
-    }
-
-    @include large {
-      font-size: 20px;
     }
   }
 
@@ -118,12 +94,6 @@
 
     &:hover {
       background-color: rgb(150, 120, 87);
-    }
-
-    @include large {
-      font-size: 24px;
-      width: 60px;
-      height: 60px;
     }
   }
 }

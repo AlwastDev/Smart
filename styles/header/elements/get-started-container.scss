@@ -18,20 +18,12 @@
       font-size: 70px;
     }
 
-    @include large {
-      font-size: 100px;
-    }
-
     &-part {
       display: block;
-      font-family: 'PT Serif';
+      font-family: 'PT Serif', sans-serif;
       color: rgba(255, 255, 255, 0.8);
       font-size: 24px;
       text-transform: none;
-      
-      @include large {
-        font-size: 38px;
-      }
     }
   }
 
@@ -43,10 +35,6 @@
     transition: linear 0.4s;
     text-shadow: 1px 1px 2px black;
 
-    @include large {
-      font-size: 28px;
-    }
-
     &:hover {
       background-color: black;
     }
@@ -55,9 +43,5 @@
   &__description {
     letter-spacing: normal;
     text-align: center;
-
-    @include large {
-      font-size: 20px;
-    }
   }
 }

@@ -1,11 +1,9 @@
 .footer {
   padding: 30px 0;
-  background-color: $greyBackground;
 
   &__content {
     display: flex;
     justify-content: space-between;
-    color: $greyColor;
 
     @media (max-width: 420px) {
       flex-direction: column;
@@ -28,19 +26,11 @@
       margin-top: 8px;
       text-align: center;
     }
-
-    @include large {
-      font-size: 24px;
-    }
   }
 
   &__fudi {
     @media (max-width: 420px) {
       text-align: center;
-    }
-
-    @include large {
-      font-size: 24px;
     }
   }
 

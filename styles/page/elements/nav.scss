@@ -31,9 +31,5 @@
     &:hover {
       background-color: black;
     }
-
-    @include large {
-      font-size: 40px;
-    }
   }
 }

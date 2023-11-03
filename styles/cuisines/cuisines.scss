@@ -39,37 +39,23 @@
     letter-spacing: 3px;
     text-transform: uppercase;
     text-shadow: 3px 3px 4px black;
-
-    @include large {
-      font-size: 38px;
-    }
   }
 
   &__amount-of-recipes {
     color: rgb(224, 223, 223);
     font-size: 15px;
-    font-family: 'PT Serif';
+    font-family: 'PT Serif', sans-serif;
     text-shadow: 2px 2px 3px black;
-
-    @include large {
-      font-size: 20px;
-    }
   }
 
   &__title {
-    margin: 0 auto;
-    margin-bottom: 40px;
+    margin: 0 auto 40px;
 
-    @include large {
-      font-size: 28px;
-    }
-    
     &::after {
       content: "";
       display: block;
       width: 88px;
       height: 2px;
-      background-color: $afterColor;
       margin: 0 auto;
     }
   }
@@ -102,18 +88,10 @@
   &__number {
     font-weight: 800;
     font-size: 30px;
-
-    @include large {
-      font-size: 40px;
-    }
   }
 
   &__description {
     font-size: 13px;
-
-    @include large {
-      font-size: 20px;
-    }
   }
 
   &__sort {
@@ -125,10 +103,6 @@
     letter-spacing: normal;
     transition: linear 0.4s;
     text-transform: uppercase;
-
-    @include large {
-      font-size: 22px;
-    }
 
     &:hover {
       background-color: black;

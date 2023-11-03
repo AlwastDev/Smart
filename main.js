@@ -34,7 +34,6 @@ cuisines.map(cuisine => {
 SortButton.addEventListener('click', () => {
   sorted = !sorted;
   cuisinesBlock.innerHTML = '';
-  console.log(123)
 
   if (sorted) {
     cuisines.sort((a, b) => a.recipes - b.recipes).map(cuisine => {
@@ -98,7 +97,7 @@ function setCount(element, number) {
         count++;
       }
     }
-    
+
     if (spicesHerbs.innerHTML === '3,182' && number !== minTime) {
       element.innerHTML = `${number}`;
       const resultCount = (number / 1000) + '';
@@ -139,15 +138,13 @@ togglerOpen.onclick = (() => {
   `;
 });
 
-
-
-togglerClose.onclick = ('click', () => {
-  nav.style.cssText = `
+togglerClose.onclick = () => {
+    nav.style.cssText = `
     transform: translateX(100%);
-
     transition: 0.3s;
   `;
-});
+};
+
 
 logoCloseNav.addEventListener('click', () => {
   nav.style.cssText = `
